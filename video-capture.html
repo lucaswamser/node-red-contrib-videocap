@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('video-capture',{
+        category: 'video',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value:""},
+            source: {value:"0"}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "cam.png",
+        label: function() {
+            return this.name||"Video Capture";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="video-capture">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Source</label>
+        <input type="text" id="node-input-source" placeholder="Source">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="video-capture">
+    <p>OpenCv Video Capture</p>
+</script>

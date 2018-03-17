@@ -1,0 +1,15 @@
+{
+  "name": "node-red-contrib-videocap",
+  "version": "1.0.1",
+  "description": "",
+  "node-red": {
+    "nodes": {
+      "video-capture": "video-capture.js"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "opencv": "^6.0.0"
+  }
+}
