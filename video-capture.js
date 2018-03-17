@@ -27,7 +27,7 @@ module.exports = function(RED) {
             node.cap = cap
             node.status({fill:"green",shape:"dot",text:"connected"});
         }).catch(function(e){
-            this.status({fill:"red",shape:"ring",text:"error"});
+            node.status({fill:"red",shape:"ring",text:"error"});
         });
 
         node.on('input', function(msg) {
